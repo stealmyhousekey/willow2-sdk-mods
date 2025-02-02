@@ -10,7 +10,7 @@ shoutouts to [Robeth](https://github.com/RobChiocchio) for his previous unlimite
 ### Usage:
 ##### ONLY REQUIRED ON HOST
 - HOST
-    - Install the [PythonSDK](https://bl-sdk.github.io/willow2-mod-db/) and NoCap
+    - Install the [PythonSDK](https://bl-sdk.github.io/willow2-mod-db/) and [NoCap](https://github.com/stealmyhousekey/willow2-sdk-mods/raw/refs/heads/main/nocap/nocap.sdkmod)
     - Enable mod [Main Menu → Mods → NoCap]
     - Set desired number of teams (and any other options) in mod settings menu
     - Start the game SOLO
