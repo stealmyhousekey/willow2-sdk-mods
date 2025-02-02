@@ -1,0 +1,17 @@
+[project]
+name = "nocap"
+version = "0.2.0"
+authors = [{ name = "stelmo" }]
+description = """\
+Uncaps lobby size for 5+ players\n\n
+Shoutouts to Robeth for his CoopPatch and great documentation\n\n
+[fax, no printer]
+"""
+dependencies = []
+
+
+[tool.sdkmod]
+name = "NoCap"
+coop_support = "RequiresAllPlayers"
+license = {name = "GPL3", url = "https://choosealicense.com/licenses/gpl-3.0/" }
+download = "https://github.com/stealmyhousekey/willow2-sdk-mods/raw/refs/heads/main/nocap/nocap.sdkmod"
