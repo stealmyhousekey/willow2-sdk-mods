@@ -19,7 +19,7 @@
 
 from __future__ import annotations
 from mods_base import options, keybind
-from mods_base.mod import CoopSupport
+from mods_base.mod import CoopSupport, Game
 from mods_base.mod_factory import build_mod
 from nocap import altfixes, hooks, functions, hotfixes, network, vehicles
 from nocap.functions import log
@@ -142,6 +142,8 @@ def reapply_fixes() -> None:
         altfixes.manual_fixes()
     if(sv.EnableVehicleTweaks): # vehicle tweaks
         vehicles.apply_vehicle_qol(True)
+    if(Game.get_current() == Game.TPS): # TPS mission fixes
+        functions.fix_tps_missions()
 
 
 #* build 

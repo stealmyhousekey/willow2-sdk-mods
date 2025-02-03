@@ -12,4 +12,6 @@ class global_vars:
     VehicleTweaksApplied = False
     VehicleScaling = 0
 
+    TPSMissionsFixed = False
+
     EnableLogging = False

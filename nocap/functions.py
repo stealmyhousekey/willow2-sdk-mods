@@ -61,6 +61,7 @@ def find_best_team() -> int:
     # if team_sizes[random_team][1] < 4:
     #     log(f"Found team with space: {random_team}")
     #     return random_team
+    # return 1
     #? end debug
     
     if team_sizes[0][1] < 4: # allow up to 3 players in team 0
@@ -98,3 +99,12 @@ def set_enemy_scaling(_option: options.BoolOption | None, value: bool) -> None:
             ]
             parse_commands(commands)
             log(f"Enemy scaling adjusted to maximum [EffectiveNumPlayers: 4]")
+
+
+def fix_tps_missions() -> None: # why does only TPS have this lol
+    player_count = sv.TeamCount * 4
+    mission_list = ENGINE.GetCurrentWorldInfo().GRI.MissionTracker.MissionList
+    for mission in mission_list:
+        mission.MissionDef.MaxNumPlayerRequirement = player_count
+    sv.TPSMissionsFixed = True
+    log(f"Set {len(mission_list)} TPS mission player limits to {player_count}")

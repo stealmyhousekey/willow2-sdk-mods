@@ -1,5 +1,6 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING, Any
+from mods_base.mod import Game
 from unrealsdk import find_all
 from unrealsdk.hooks import Type, Block, add_hook, remove_hook
 from unrealsdk.unreal import BoundFunction
@@ -26,6 +27,9 @@ def get_game_sequence(obj: WorldInfo,
     elif(sv.EnableFixes == 2):
         if(not sv.HotfixesApplied):
             hotfixes.spark_hotfixes(0)
+    if Game.get_current() == Game.TPS: 
+        if(not sv.TPSMissionsFixed):
+            functions.fix_tps_missions()
     pass
 
 
