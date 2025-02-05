@@ -4,9 +4,9 @@ from mods_base.mod import Game
 from unrealsdk import find_all
 from unrealsdk.hooks import Type, Block, add_hook, remove_hook
 from unrealsdk.unreal import BoundFunction
-from nocap import altfixes, functions, hotfixes, vehicles
-from nocap.functions import log
-from nocap.variables import global_vars as sv
+from nocap.mod import altfixes, functions, hotfixes, vehicles
+from nocap.mod.functions import log
+from nocap.mod.variables import global_vars as sv
 
 if TYPE_CHECKING:
     from common import WillowGame, WorldInfo, VehicleSpawnStationPlatform #, WillowPlayerController, WillowCoopGameInfo
@@ -122,7 +122,7 @@ def remove_hooks() -> None:
     )
     remove_hook(
         "Engine.WorldInfo:GetGameSequence",
-        Type.PRE,
+        Type.POST,
         "NoCap_GetGameSequence",
     )
     remove_hook(

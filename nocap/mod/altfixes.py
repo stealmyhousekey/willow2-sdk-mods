@@ -1,8 +1,8 @@
 from __future__ import annotations
 from mods_base import get_pc
-from nocap import functions
-from nocap.functions import log
-from nocap.variables import global_vars as sv
+from nocap.mod import functions
+from nocap.mod.functions import log
+from nocap.mod.variables import global_vars as sv
 
 
 #! WARNING: MOST OF THIS DOES NOT SEEM TO CURRENTLY WORK

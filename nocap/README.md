@@ -56,11 +56,11 @@ shoutouts to [Robeth](https://github.com/RobChiocchio) for his previous unlimite
 |-------------------------------|---------------------------------------------|
 | Borderlands 1                 | UNTESTED (Might work; waiting for official PythonSDK)   |
 | Borderlands 2                 | WORKING                                     |
-| The Pre-Sequel                | PENDING (Needs 5+ player testing; no console errors during quick two client test)         |
-| Assault on Dragon Keep        | UNTESTED (Should work)                                    |
-| Borderlands 3                 | REQUIRES RESEARCH/REWRITE FOR OAK SDK* |
-| Tiny Tina's Wonderlands       | REQUIRES RESEARCH/REWRITE FOR OAK SDK* |
-||* Currently focusing on willow2, but plan on playing through and writing mods for oak relatively soon |
+| The Pre-Sequel                | WORKING                                     |
+| Assault on Dragon Keep        | UNTESTED (Should work)                      |
+| Borderlands 3                 | REQUIRES RESEARCH/REWRITE FOR OAK SDK*      |
+| Tiny Tina's Wonderlands       | REQUIRES RESEARCH/REWRITE FOR OAK SDK*      |
+||* currently focusing on willow2, but plan on playing through and writing mods for oak very soon |
 
 <br>
 

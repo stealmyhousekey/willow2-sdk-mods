@@ -1,8 +1,8 @@
 from __future__ import annotations
 from mods_base import get_pc, options
-from nocap import functions
-from nocap.functions import log
-from nocap.variables import global_vars as sv
+from nocap.mod import functions
+from nocap.mod.functions import log
+from nocap.mod.variables import global_vars as sv
 
 
 def set_hotfix(_option: options.DropdownOption | None, value: str) -> None:

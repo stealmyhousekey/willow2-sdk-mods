@@ -1,6 +1,6 @@
 from mods_base import options
 from unrealsdk import find_all
-from nocap.functions import log, parse_commands
+from nocap.mod.functions import log, parse_commands
 
 
 def set_net_vars(_option: options.DropdownOption, value: str) -> None:

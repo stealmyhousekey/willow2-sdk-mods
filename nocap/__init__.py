@@ -21,9 +21,9 @@ from __future__ import annotations
 from mods_base import options, keybind
 from mods_base.mod import CoopSupport, Game
 from mods_base.mod_factory import build_mod
-from nocap import altfixes, hooks, functions, hotfixes, network, vehicles
-from nocap.functions import log
-from nocap.variables import global_vars as sv
+from nocap.mod import altfixes, hooks, functions, hotfixes, network, vehicles
+from nocap.mod.functions import log
+from nocap.mod.variables import global_vars as sv
 
 
 #* mod toggles

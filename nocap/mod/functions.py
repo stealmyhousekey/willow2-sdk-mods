@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import Optional
 from mods_base import get_pc, options, ENGINE
 from unrealsdk import logging, find_all
-from nocap.variables import global_vars as sv
+from nocap.mod.variables import global_vars as sv
 
 
 def set_logging(_option: options.BoolOption | None, value: bool) -> None:

@@ -2,8 +2,8 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 from unrealsdk import find_all, find_object
 from mods_base import get_pc, options
-from nocap.functions import log
-from nocap.variables import global_vars as sv
+from nocap.mod.functions import log
+from nocap.mod.variables import global_vars as sv
 
 if TYPE_CHECKING:
     from common import WillowVehicle 
